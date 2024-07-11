@@ -12,8 +12,8 @@ import tempfile
 import pandas as pd
 
 # Initialize device
-device = "cuda" if torch.cuda.is_available() else "cpu"
-st.write(f"Using CUDA: {torch.cuda.is_available()}")
+device = "cpu"
+# st.write(f"Using CUDA: {torch.cuda.is_available()}")
 
 # Define the transformation to apply to the images
 transform = transforms.Compose(
@@ -28,7 +28,7 @@ change_list = []
 model = timm.create_model("tf_efficientnet_b0_ns", pretrained=False)
 model.classifier = nn.Sequential(nn.Linear(in_features=1280, out_features=7))
 model = torch.load(
-    "22.6_AffectNet_10K_part2.pt"
+    "22.6_AffectNet_10K_part2.pt",map_location=device
 )
 model.to(device)
 model.eval()
