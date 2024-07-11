@@ -122,7 +122,6 @@ thinc==8.2.3
 threadpoolctl==3.5.0
 toml==0.10.2
 toolz==0.12.1
-torchaudio==2.3.0+cu118
 torchsummary==1.5.1
 torchvision==0.18.0+cu118
 tornado==6.4.1
