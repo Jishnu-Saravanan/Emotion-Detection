@@ -112,7 +112,6 @@ streamlit==1.35.0
 sympy==1.12
 tbb==2021.11.0
 tenacity==8.3.0
-tensorboard==2.13.0
 tensorboard-data-server==0.7.2
 tensorflow-estimator==2.13.0
 tensorflow-io-gcs-filesystem==0.31.0
