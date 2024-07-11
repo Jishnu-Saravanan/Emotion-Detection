@@ -1,9 +1,9 @@
-streamlit
+streamlit==1.35.0
 opencv-python
 torch
 torchvision
 numpy
-timm
+timm==1.0.3
 mediapipe
 pandas
 pillow
